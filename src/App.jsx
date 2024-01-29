@@ -10,6 +10,7 @@ import Steps from './components/Steps';
 import { useForm } from './hooks/UseForm';
 import { useState } from 'react';
 import './App.css';
+import Swal from 'sweetalert2';
 
 const formtemplate = {
   name: '',
@@ -62,7 +63,13 @@ function App() {
                 type="button"
                 onClick={(e) => {
                   e.preventDefault();
-                  alert(`Obrigado pelo feedback! ${data.name}`);
+                  Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: `Obrigado pelo Feedback ${data.name}`,
+                    showConfirmButton: false,
+                    timer: 1500,
+                  });
                 }}
               >
                 <span>Enviar</span>
