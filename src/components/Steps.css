@@ -1,6 +1,6 @@
 .steps {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
     max-width: 400px;
@@ -11,7 +11,7 @@
 
 .steps::after {
     content: "";
-    width: 380px;
+    width: 80%;
     border-bottom: 1px solid #ccc;
     position: absolute;
     top: 20px;
@@ -36,4 +36,24 @@
 
 .active>svg {
     fill: #7076f4;
+}
+
+@media (max-width: 415px) {
+    .steps {
+        gap: 2rem;
+    }
+
+    .steps::after {
+        width: 80%;
+    }
+}
+
+@media (max-width: 377px) {
+    .steps {
+        gap: 1.5rem;
+    }
+
+    steps::after {
+        width: 80%;
+    }
 }
