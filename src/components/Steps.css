@@ -53,7 +53,15 @@
         gap: 1.5rem;
     }
 
+    .inputs_container {
+        margin-bottom: .5rem;
+    }
+
     steps::after {
         width: 80%;
+    }
+
+    .inputs_container {
+        margin-bottom: .5rem;
     }
 }
