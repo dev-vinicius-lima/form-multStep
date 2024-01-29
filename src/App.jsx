@@ -58,7 +58,13 @@ function App() {
                 <GoChevronRight />
               </button>
             ) : (
-              <button type="button">
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert(`Obrigado pelo feedback! ${data.name}`);
+                }}
+              >
                 <span>Enviar</span>
                 <IoIosSend />
               </button>
