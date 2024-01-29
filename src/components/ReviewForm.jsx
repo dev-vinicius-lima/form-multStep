@@ -17,7 +17,6 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
             type="radio"
             name="review"
             value="unsatisfied"
-            required
             checked={data.review === 'unsatisfied'}
             onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
@@ -29,7 +28,6 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
             type="radio"
             name="review"
             value="neutral"
-            required
             checked={data.review === 'neutral'}
             onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
@@ -41,7 +39,6 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
             type="radio"
             name="review"
             value="satisfied"
-            required
             checked={data.review === 'satisfied'}
             onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
@@ -53,7 +50,6 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
             type="radio"
             name="review"
             value="very_satisfied"
-            required
             checked={data.review === 'very_satisfied'}
             onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
@@ -69,7 +65,6 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
           cols="40"
           rows="10"
           placeholder="Conte como foi a sua experiência com o produto..."
-          required
           value={data.comment || ''}
           onChange={(e) => updateFieldHandler('comment', e.target.value)}
         ></textarea>
