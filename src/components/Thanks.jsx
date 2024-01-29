@@ -28,13 +28,13 @@ const Thanks = ({ data }) => {
         <span>Satisfação com o produto:</span>
         {data.review
           ? emojiData[data.review]
-          : `Não obteve satisfação mas obrigado`}
+          : ` Não obteve satisfação mas obrigado`}
       </p>
       <p className="review_data">
         <span>Comentário:</span>
         {data.comment
           ? data.comment
-          : `Você não deixou um comentario mas obrigado !`}
+          : ` Você não deixou um comentario mas obrigado !`}
       </p>
     </div>
   );
